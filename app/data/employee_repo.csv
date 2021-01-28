@@ -1,0 +1,3 @@
+id,first_name,last_name,address_first_line,address_second_line,suburb,postcode,phone_number,email
+1,Fred,Flinstone,,,,0,0,
+2,Wilma,Flinstone,,,Marrickville,0,0,

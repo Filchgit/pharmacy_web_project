@@ -14,7 +14,7 @@ class Customer < Person
   end
 
   def to_array
-    [super, @posts_read]
+    super.push(@posts_read)
   end
 
   def self.csv_headers

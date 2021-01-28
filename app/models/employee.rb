@@ -19,20 +19,21 @@ class Employee < Person
 
   def to_array
     # [@id, @first_name, @last_name, @address_first_line ,@address_second_line, @suburb, @postcode, @phone_number,@email]
-    [super, @security_level, @password]
+    super.push(@security_level, @password)
   end
 
   def self.csv_headers   # useful as a thing when we have to deal with csv to self head , not sure where else
     # ['id', 'first_name', 'last_name', 'address_first_line', 'address_second_line', 'suburb', 'postcode', 'phone_number','email']
-    # is equiv to below 
+    # is equiv to below  wonder if we could do a similiar push trick here???
     %w[id first_name last_name address_first_line address_second_line suburb postcode phone_number
        email security_level password]
   end
 end
 
-my_employee = Employee.new(first_name: 'Fred', last_name: 'Flinstone', security_level: 1 , id: 246, password: 'supasecret')
+# my_employee = Employee.new(first_name: 'Fred', last_name: 'Flinstone', security_level: 1 , id: 246, password: 'supasecret')
 
-p my_employee 
-p Employee.csv_headers
+# my_employee 
+# Employee.csv_headers
+# my_employee.to_array
 
 
