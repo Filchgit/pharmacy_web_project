@@ -11,6 +11,7 @@ class Employee < Person
     @password = attributes[:password]
   end
 
+    # awesome !! the shift enter trick works on this editor too!!! makes a long line easily readable
   def to_s
     "#{first_name} #{last_name} is a Employee (child class of Person) with id #{id} 
      and security code of #{security_level}"
