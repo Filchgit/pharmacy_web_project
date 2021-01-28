@@ -1,3 +1,5 @@
-id,first_name,last_name,address_first_line,address_second_line,suburb,postcode,phone_number,email,security_level,password
-1,Karly,Smith,,,Bondi,,,,manager,secret
-2,Roger,Downs,,,Waverley,,,,peon,big secret
+id,first_name,last_name,address_first_line,address_second_line,suburb,postcode,phone_number,email,username,password,security_level
+1,Karly,Smith,,,Bondi,0,0,,Karly1,secret,peon
+2,Roger,Downs,,,Waverley,0,0,,Roger1,big secret,manager
+3,Karly,Smith,,,Bondi,,,,Karly1,secret,peon
+4,Roger,Downs,,,Waverley,,,,Roger1,big secret,manager
