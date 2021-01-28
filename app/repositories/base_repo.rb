@@ -23,11 +23,21 @@ class BaseRepo
       end
     end
   end
+
+  def create(element)
+    element.id = @next_id
+    @next_id += 1
+    @elements << element
+    save_to_csv
+  end
  
 end
 
 CSV_OPTIONS = { headers: :first_row, header_converters: :symbol }
-BASE_CSV_FILE = File.join(__dir__, 'data/base_repo.csv') 
+BASE_CSV_FILE = File.join(__dir__, '../data/base_repo.csv') 
 base_repository = BaseRepo.new(BASE_CSV_FILE)
+
+my_person = Person.new(id:1 , first_name: "Sally", last_name: "Williamson",  address_first_line: "17 Numantia Rd", suburb: "Engadine", email: "Sally@gmail.com")
+base_repository.create(my_person)
 
 p base_repository
