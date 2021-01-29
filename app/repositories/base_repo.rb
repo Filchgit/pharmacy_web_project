@@ -69,8 +69,8 @@ class BaseRepo
 end
 
 
-BASE_CSV_FILE = File.join(__dir__, '../data/base_repo.csv') 
- base_repository = BaseRepo.new(BASE_CSV_FILE)
+# BASE_CSV_FILE = File.join(__dir__, '../data/base_repo.csv') 
+#  base_repository = BaseRepo.new(BASE_CSV_FILE)
 
 # my_other_person = Person.new(first_name: "Larry", last_name: "Dover",  address_first_line: "12 Green Rd", suburb:
 #                              "Heathcote", email: "Dingo222@gmail.com", username: "Larry1")

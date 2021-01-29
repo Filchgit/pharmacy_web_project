@@ -16,20 +16,22 @@ class Person
     @password = attributes[:password]
   end
 
-  def self.csv_headers   # useful as a thing when we have to deal with csv to self head , not sure where else
-    # ['id', 'first_name', 'last_name', 'address_first_line', 'address_second_line', 'suburb', 'postcode', 
+  def self.csv_headers
+    # useful as a thing when we have to deal with csv to self head , not sure where else
+    # ['id', 'first_name', 'last_name', 'address_first_line', 'address_second_line', 'suburb', 'postcode',
     #  'phone_number','email', 'username']
-    # is equiv to below 
-    %w[id first_name last_name address_first_line address_second_line suburb postcode phone_number email username password]
+    # is equiv to below
+    %w[id first_name last_name address_first_line address_second_line suburb
+       postcode phone_number email username password]
   end
 
   def to_array
-   [@id, @first_name, @last_name, @address_first_line ,@address_second_line, @suburb, @postcode, @phone_number,
-    @email, @username, @password]
+    [@id, @first_name, @last_name, @address_first_line ,@address_second_line, @suburb, @postcode, @phone_number,
+     @email, @username, @password]
   end
 
   def to_s
-     # "#{self.first_name} #{self.last_name} is a Person (base class) with id #{self.id} " equiv to 
+    # #{self.first_name} #{self.last_name} is a Person (base class) with id #{self.id} " equiv to 
     "#{first_name} #{last_name} is a Person (base class) with id #{id} "
   end 
 

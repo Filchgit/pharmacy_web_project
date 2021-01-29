@@ -43,11 +43,11 @@ class CustomerRepo < BaseRepo
   
 end
 
-# down here for in page testing moved back further as it gets more complete
-CUSTOMER_CSV_FILE = File.join(__dir__, '../data/customer_repo.csv')
-customer_repository = CustomerRepo.new(CUSTOMER_CSV_FILE)
+# # down here for in page testing moved back further as it gets more complete
+# CUSTOMER_CSV_FILE = File.join(__dir__, '../data/customer_repo.csv')
+# customer_repository = CustomerRepo.new(CUSTOMER_CSV_FILE)
 
 
- my_customer = Customer.new(first_name: "janice", last_name: "Latrobe", suburb: "Glenelg", posts_read: 13 ,
-                             username: "janice1", password: '1234')
- customer_repository.create(my_customer)
+#  my_customer = Customer.new(first_name: "janice", last_name: "Latrobe", suburb: "Glenelg", posts_read: 13 ,
+#                              username: "janice1", password: '1234')
+#  customer_repository.create(my_customer)

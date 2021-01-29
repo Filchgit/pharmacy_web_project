@@ -41,12 +41,12 @@ end
 
 
 # down here for testing on this page ,moved back further along the chain as I work it out
-EMPLOYEE_CSV_FILE = File.join(__dir__, '../data/employee_repo.csv')
-employee_repository = EmployeeRepo.new(EMPLOYEE_CSV_FILE)
+# EMPLOYEE_CSV_FILE = File.join(__dir__, '../data/employee_repo.csv')
+# employee_repository = EmployeeRepo.new(EMPLOYEE_CSV_FILE)
 
- my_employee = Employee.new(first_name: "Karly", last_name: "Smith", suburb: "Bondi", security_level: 'peon', password: "secret", username: "Karly1")
- my_sec_employee  =  Employee.new(first_name: "Roger", last_name: "Downs", suburb: "Waverley", security_level: 'manager', password: "big secret", username: "Roger1")
+#  my_employee = Employee.new(first_name: "Karly", last_name: "Smith", suburb: "Bondi", security_level: 'peon', password: "secret", username: "Karly1")
+#  my_sec_employee  =  Employee.new(first_name: "Roger", last_name: "Downs", suburb: "Waverley", security_level: 'manager', password: "big secret", username: "Roger1")
 
- employee_repository.create(my_employee)
- employee_repository.create(my_sec_employee)
+#  employee_repository.create(my_employee)
+#  employee_repository.create(my_sec_employee)
 
