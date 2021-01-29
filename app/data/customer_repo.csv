@@ -1,2 +1,4 @@
 id,first_name,last_name,address_first_line,address_second_line,suburb,postcode,phone_number,email,username,password,posts_read
-1,janice,Latrobe,,,Glenelg,,,,janice1,1234,13
+1,janice,Latrobe,,,Glenelg,0,0,,janice1,1234,13
+2,John,MacAulay,,,,0,0,,gilch,damsecret,0
+3,Ian ,McTaylor,,,,,,,Crazy Dawg,dogdays,

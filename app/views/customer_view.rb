@@ -1,10 +1,7 @@
+require_relative 'base_view'
 require 'pry-byebug'
 
-class BaseView
-    def initialize
-
-    end
-
+class CustomerView < BaseView
     def ask_user_for(stuff)
         puts "Please provide a(n) #{stuff.downcase}."
         print "> "

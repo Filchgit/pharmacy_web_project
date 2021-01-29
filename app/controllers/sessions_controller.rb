@@ -30,7 +30,6 @@ class SessionsController
     password = @sessions_view.ask_user_for(:password)
     employee if employee && employee.password == password
     return employee unless employee.nil?
-
     customer if customer && customer.password == password
     return customer unless customer.nil?
   end
